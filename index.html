@@ -1,0 +1,47 @@
+<!doctype html>
+    <head>
+        <title>
+            kl
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            
+        </style>
+  </head>
+  <body id="vb" style="background-color: black;">
+      <div style="color: black;background-color: rgb(65, 65, 50);height: 50px;width: 150px;border-radius: 20px;"></div>
+      <button style="background-color: rgb(240, 14, 33);border-radius: 80px;width: 80px;position: relative;top: -50px;left: 1px;border: 1px solid rgb(250, 7, 7);height: 50px;font-size: 15px;" id="mn" onclick="fun()">rahul</button>
+        <img src="download.png" width="500px" height="590px" style="display: block;left: -45px;position: relative;top:-50px" id="imgg">
+        <img src="rahul.jpg" style="width: 150px;height: 130px;position: relative;top: -400px;left: 120px;border-radius: 70px;display: none;" id="img1">
+        <img src="siya2.jpg" style="width: 150px;height: 130px;position: relative;top: -400px;left: 120px;border-radius: 70px;display: none;"id="img2" >
+        <audio src="ayedil.mp3" type="mp3" id="mcv"></audio>
+   <script>
+       window.onload=function()
+       {
+            document.getElementById("mcv").play();
+       }
+function fun()
+{
+    var h=document.getElementById("mn");
+    var j=document.getElementById("vb");
+    var a=document.getElementById("img1");
+    var b=document.getElementById("img2");
+    if(h.style.left=="72px")
+    {
+        h.style.left="1px";
+        h.textContent="rahul";
+        h.style.transitionDuration="1s";
+        b.style.display="block";
+        a.style.display="none";
+    }
+    else{
+        h.style.left="72px";
+        h.style.transitionDuration="2s";
+        h.textContent="siya";
+        b.style.display="none";
+        a.style.display="block";
+    }
+}
+  </script>
+  </body>
+</html>
