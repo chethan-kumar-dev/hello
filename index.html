@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>k</title>
+        <style>
+            .ring{
+                height: 200px;
+                width: 200px;
+                border: 5px solid grey;
+                box-shadow: 0 0 10px green;
+                border-radius: 50%;
+                animation-duration: 15s;
+                border: dotted;
+                border-top: 10px dotted green;
+                animation-iteration-count: infinite;
+                animation-delay: -1s;
+                animation-name: cock;
+                animation-timing-function: ease-in-out;
+                background-color: rgb(158, 165, 165);
+            }
+            .mn{
+                animation-name: cock1;
+                animation-timing-function: ease-in-out;
+                animation-delay: -1s;
+                animation-iteration-count: infinite;
+                animation-duration: 5s;
+                animation-direction: alternate-reverse;
+            }
+            @keyframes cock
+            {
+                100%{transform: rotate(3600deg);}
+            }
+          
+            @keyframes cock1{
+                to{transform: rotate(-5deg);}
+
+            }
+           
+        </style>
+    </head>
+    <body>
+        <div class="ring">
+        </div>
+        <div class="mn">
+            <span style="font-size: 40px;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;transform: rotate(180deg);transition-duration: 10s;transition-property: width;color: rgb(241, 12, 12);position: relative;top: -100px;left: 40px;">loading..</span>
+<iframe src="https://www.youtube.com/watch?v=Kb8PG8b-dek" width="200px" height="200px" allowfullscreen></iframe>
+       <script>
+           var th=document.getElementById("ring");
+           window.addEventListener('load',function()
+           {
+                th.style.display='none';
+           })
+       </script>
+    </body>
+</html>
