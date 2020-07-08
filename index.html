@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>
+            hello
+        </title>
+        <style>
+            input [type=radio] {font-size: 40px;}
+body {
+background-color: lightblue;
+font-family: Helvetica;
+}
+
+#main {
+width: 80%;
+max-width: 950px;
+border: 1px gray solid;
+margin: auto;
+padding: 10px;
+background-color: white;
+border-radius: 10px;
+}
+
+#header {
+margin-top: 0;
+border: 2px solid black;
+padding: 5px;
+height: 250px;
+background: beige;
+background-image: url("code.jpg");
+color: white;
+}
+label {
+display: block;
+font-size: 20px;
+font-style: italic;
+}
+
+input [type='radio']:checked:after {
+width: 15px;
+margin-left: 20px;
+font-size: 40px;
+background-color: blue;
+content: '';
+position: relative;
+border-radius: 10px;
+font-style: bold;
+}
+
+h2 {
+
+padding-top: 20px;
+font-style: bold;
+}
+
+#mj{position: relative;top:-50px;background-color: orange;border-radius: 10px;border: 1px solid black;height: 40px;font-size: 30px;padding: 5px 10px 10px 10px;justify-content: center;align-items: center;}
+ #mj:hover{background-color: rgb(187, 133, 40);height: 45px;width: 115px;}
+
+        </style>
+    </head>
+        <body style="background-color: black;position: relative;">
+            <div style="height: 100px;width: 100px;background-color: black;">
+
+            </div>
+            <hr>
+              <form id="form1" >
+                <img src="as.jpg" style="width: 250px;height: 120px;position: relative;top:-130px;margin: 0px;left: -25px;">
+<h2 style="color: rgb(233, 17, 17);position: relative;top:-150px">* select all the answers and then click on submit button to get the score.</h1>
+<div style="background-color: brown;height: 250px;width: 500px;padding: 20px;border-radius: 20px;border: 2px solid black;background-image: linear-gradient(to right, blue,red);position: relative;top:-100px">
+                    <h2>Which is the longest river in the world?</h2>
+                    <label for="var_string"><input type="radio" name="variable" value="0" id="var_string" style="font-size: 30px;" onclick="this.style.backgroundcolor='blue'"/>Amazon river</label>
+                    <label for="var_join"><input type="radio" name="variable" value="0" id="var_join" />ganges river</label>
+                    <label for="var_info"><input type="radio" name="variable" value="0" id="var_info" />congo river</label>
+                    <label for="var_condition"><input type="radio" name="variable" value="1" id="var_condition"/>nile</label>
+                </div>
+                <br>
+                <div style="background-color: brown;height: 250px;width: 500px;padding: 20px;border-radius: 20px;border: 2px solid black;background-image: linear-gradient(to right, red,blue);position: relative;top:-100px">
+
+                    <h2>Who stands in place one in all cricket formats?</h2>
+                    <label for="sub_string"><input type="radio" name="sub" value="0" id="sub_string"/>rohit sharma</label>
+                    <label for="sub_join"><input type="radio" name="sub" value="1" id="sub_join"/>virat kholi</label>
+                    <label for="sub_info"><input type="radio" name="sub" value="0" id="sub_info" />brendom mc cullum</label>
+                    <label for="sub_condition"><input type="radio" name="sub" value="0" id="sub_condition" />AB Devilliers.</label>
+                </div>
+                <br>
+                <div style="background-color: brown;height: 250px;width: 500px;padding: 20px;border-radius: 20px;border: 2px solid black;background-image: linear-gradient(to right,blue,red);position: relative;top:-100px">
+
+                    <h2>When is world tobacco day celebrated?</h2>
+                    <label for="cat_string"><input type="radio" name="con" value="1" id="cat_string" />may 31st</label>
+                    <label for="cat_join"><input type="radio" name="con" value="0" id="cat_join" />nov 17th</label>
+                    <label for="cat_info"><input type="radio" name="con" value="0" id="cat_info" />jan 5th</label>
+                    <label for="cat_condition"><input type="radio" name="con" value="0" id="cat_condition" />march 5th</label>
+                </div>
+                <br>
+                <div style="background-color: brown;height: 250px;width: 500px;padding: 20px;border-radius: 20px;border: 2px solid black;background-image: linear-gradient(to right, red,blue);position: relative;top:-100px">
+                    <h2>Which is the tallest mountain in the world?</h2>
+                    <label for="if_string"><input type="radio" name="ifstate" value="0" id="radio" />k2</label>
+                    <label for="if_join"><input type="radio" name="ifstate" value="0" id="radio" />God austin</label>
+                    <label for="if_info"><input type="radio" name="ifstate" value="0" id="radio" />nandi hills</label>
+                    <label for="if_condition"><input type="radio" name="ifstate"  value="1" id="radio" />Mount everest</label>
+                </div>
+                <br>
+                <div style="background-color: brown;height: 250px;width: 500px;padding: 20px;border-radius: 20px;border: 2px solid black;background-image: linear-gradient(to right,blue,red);position: relative;top:-100px">
+                    <h2>Which is the hottest dessert in the world?</h2>
+                    <label for="if_string"><input type="radio" name="ifstat" value="1" id="radio" />sahara</label>
+                    <label for="if_join"><input type="radio" name="ifstat" value="0" id="radio" />atacama</label>
+                    <label for="if_info"><input type="radio" name="ifstat" value="0" id="radio" />polar desert </label>
+                    <label for="if_condition"><input type="radio" name="ifstat"  value="0" id="radio" />gobi desert</label>
+                </div>
+                    <button type="submit" id="mj" value="Submit" >submit</button>
+                    <p style="color: white;font-size: 30px;position: relative;top:-50px;left: 100px;">Your grade is<br> <span id="grade" style="position: relative;left:50px;font-size: 40px;top: 50px;"></span></p>           
+</form>   
+       <script>
+document.getElementById("form1").onsubmit=function() {
+   
+       variable = parseInt(document.querySelector('input[name = "variable"]:checked').value);
+	   sub = parseInt(document.querySelector('input[name = "sub"]:checked').value);
+	   con = parseInt(document.querySelector('input[name = "con"]:checked').value);
+	   ifstate = parseInt(document.querySelector('input[name = "ifstate"]:checked').value);
+       ifstat = parseInt(document.querySelector('input[name = "ifstat"]:checked').value);
+
+	   
+	   result = variable + sub + con + ifstate+ifstat;
+	   
+	document.getElementById("grade").innerHTML = result;
+
+return false; // required to not refresh the page; just leave this here
+} //this ends the submit function
+
+       </script>
+
+    </body>
+    </html>
