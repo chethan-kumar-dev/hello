@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <title> ajds</title>
+        <style>
+            li div{float: left;width: 300px;flex-wrap: wrap;margin: 20px;}
+            ul div{width: 300px;}
+            ul{list-style-type: none;}
+            .mn{margin: 10px;}
+
+            #menu{margin: -10px;position: relative;top: 5px;}
+            #menu:hover{cursor: pointer;}
+         li a{text-decoration: none;color: aliceblue;}
+         ol li{font-size: 20px;}
+         #afg{background-color: black;width: 200px;height: 200px;box-shadow: 5px 5px 30px red;position: relative;top: -60px;left: -230px;}
+        </style>
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    </head>
+    <body style="background-color: black;">
+        <div id="menu" >
+            <div style="width: 30px;height: 7px;background-color: red;" class="mn" onclick="fun()"></div>
+            <div style="width: 30px;height: 7px;background-color: red;" class="mn" onclick="fun()"></div>
+            <div style="width: 30px;height: 7px;background-color: red;" class="mn" onclick="fun()"></div>
+        </div> 
+        <hr style="position: relative;top: 20px;">
+        <div id="afg">
+            <ol>
+                <li><p style="color: red;position: relative;left: 100px;top:10px;cursor: pointer;" onclick="fu()" >&#10006;</p>
+                </li>
+                <li><a href="loader css.html" >HOT</h1></li>
+                <hr>
+                <li><a href="loader css1.html">CUTE</a></li>
+                <hr>
+                <li><a href="loader css2.html">SAD</a></li>
+            </ol>
+        </div>
+        <div style="position: relative;left: -10px;top: -100px;">
+        <ul>
+            <li>        <div style="background-color: rgb(15, 15, 14);box-shadow: 5px 5px 30px rgb(228, 10, 10);height: 300px;text-align: center;position: relative;top: -100px;z-index: -1;"><img src="download.png" style="width: 100px;height: 100px;position: relative;top:50px""></div>
+            </li>
+            <li>        <div style="background-color: rgb(17, 17, 16);box-shadow: 5px 5px 30px rgb(223, 13, 13);height: 300px;text-align: center;position: relative;top: -100px;"><img src="download.png" style="width: 100px;height: 100px;position: relative;top:50px"></div>
+            </li>
+            <li>        <div style="background-color: rgb(12, 12, 11);box-shadow: 5px 5px 30px rgb(224, 11, 11);height: 300px;text-align: center;position: relative;top: -100px;"><img src="download.png" style="width: 100px;height: 100px;position: relative;top:50px"></div>
+            </li>
+            <li>        <div style="background-color: rgb(10, 10, 10);box-shadow: 5px 5px 30px rgb(224, 12, 12);height: 300px;text-align: center;position: relative;top: -100px;"><img src="download.png" style="width: 100px;height: 100px;position: relative;top:50px"></div>
+            </li>
+            <li>        <div style="background-color: rgb(8, 8, 8);box-shadow: 5px 5px 30px rgb(226, 10, 10);height: 300px;text-align: center;position: relative;top: -100px;"><img src="download.png" style="width: 100px;height: 100px;position: relative;top:50px"></div>
+            </li>
+            <li>        <div style="background-color: rgb(12, 12, 12);box-shadow: 5px 5px 30px rgb(230, 13, 13);height: 300px;text-align: center;position: relative;top: -100px;"><img src="download.png" style="width: 100px;height: 100px;position: relative;top:50px"></div>
+            </li>
+        </ul>
+    </div>
+    <script>
+        var th=document.getElementById("afg");
+
+       function fun()
+       
+        {
+        
+            th.style.left="-10px";
+            th.style.transitionDuration="1s";
+            th.style.transitionDelay="0s";
+            th.style.transitionTimingFunction="ease-in-out";
+        }
+    
+    function fu()
+        {
+                th.style.left="-230px";
+                th.style.transitionDuration="1s";
+                th.style.transitionTimingFunction="ease-in-out";
+
+        }
+        </script>
+
+    </body>
+</html>
