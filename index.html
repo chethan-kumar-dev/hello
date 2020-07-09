@@ -11,7 +11,7 @@
             #menu:hover{cursor: pointer;}
          li a{text-decoration: none;color: aliceblue;}
          ol li{font-size: 20px;}
-         #afg{background-color: black;width: 200px;height: 200px;box-shadow: 5px 5px 30px red;position: relative;top: -60px;left: -230px;}
+         #afg{background-color: black;width: 200px;height: 200px;box-shadow: 5px 5px 30px red;position: relative;top: -65px;left: -230px;}
         </style>
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -19,8 +19,8 @@
     <body style="background-color: black;">
         <div id="menu" >
             <div style="width: 30px;height: 7px;background-color: red;" class="mn" onclick="fun()"></div>
-            <div style="width: 30px;height: 7px;background-color: red;" class="mn" onclick="fun()"></div>
-            <div style="width: 30px;height: 7px;background-color: red;" class="mn" onclick="fun()"></div>
+            <div style="width: 30px;height: 7px;background-color: red;" class="mn" onclick="fun1()"></div>
+            <div style="width: 30px;height: 7px;background-color: red;" class="mn" onclick="fun2()"></div>
         </div> 
         <hr style="position: relative;top: 20px;">
         <div id="afg">
@@ -54,6 +54,24 @@
         var th=document.getElementById("afg");
 
        function fun()
+       
+        {
+        
+            th.style.left="-10px";
+            th.style.transitionDuration="1s";
+            th.style.transitionDelay="0s";
+            th.style.transitionTimingFunction="ease-in-out";
+        }
+                 function fun1()
+       
+        {
+        
+            th.style.left="-10px";
+            th.style.transitionDuration="1s";
+            th.style.transitionDelay="0s";
+            th.style.transitionTimingFunction="ease-in-out";
+        }
+                 function fun2()
        
         {
         
